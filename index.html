@@ -461,7 +461,7 @@ html.js[data-st="dia"] #cierre,html.js[data-st="puesto-thr"] #cierre{display:blo
   .menu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);column-gap:56px;align-items:start;padding-top:20px!important;padding-bottom:56px}
   .menu>.intro-h{grid-column:1;grid-row:1;font-size:32px!important;margin-top:8px!important}
   .menu>.intro-p{grid-column:1;grid-row:2;font-size:16px!important}
-  .menu>.a2hs{grid-column:1;grid-row:3}
+  .menu>.pdfdl{grid-column:1;grid-row:3}
   .menu>.motto{grid-column:1;grid-row:4}
   .menu>.stagebtns{grid-column:2;grid-row:1/6;grid-template-columns:1fr 1fr!important;margin-top:8px}
   .home4 .scard{min-height:120px;padding:18px}
@@ -488,7 +488,7 @@ html.js[data-st="dia"] #cierre,html.js[data-st="puesto-thr"] #cierre{display:blo
   #kits>.feria{grid-column:2;grid-row:1/12;margin-top:0}
   #checklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:24px;align-items:start}
   #checklist>.eyebrow,#checklist>h2,#checklist>.lead,#checklist>.count{grid-column:1/-1}
-  .menu>.a2hs{display:none}
+
   /* día */
   #domingo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:48px;align-content:start}
   #domingo>*{grid-column:1}
@@ -597,6 +597,13 @@ html.js:not(.home) .cover .edition{font-size:11px;margin-top:2px}
 @media (max-width:400px){#ruta42 .bar div,#ruta5 .bar div{font-size:10.5px!important}}
 .distsel button{white-space:nowrap}
 @media (max-width:480px){ .distsel button[data-d="all"]{flex:1.9} }
+/* pdf download */
+.pdfdl{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;background:var(--ink2);border:1px solid #3a3a3a;border-radius:14px;padding:12px 14px}
+.pdfdl .pdft{flex:1 1 200px;min-width:0}
+.pdfdl b{display:block;color:var(--paper);font-size:15px}
+.pdfdl span{display:block;color:var(--muted-dk);font-size:13px;line-height:1.4;margin-top:2px}
+.pdfbtn{flex:0 0 auto;display:inline-block;background:var(--orange);color:var(--ink)!important;font-weight:900;font-size:14px;text-decoration:none;border-radius:99px;padding:11px 18px;white-space:nowrap}
+@media (max-width:480px){ .pdfbtn{width:100%;text-align:center} }
 </style>
 <script>document.documentElement.className+=' js';</script>
 </head>
@@ -634,7 +641,10 @@ html.js:not(.home) .cover .edition{font-size:11px;margin-top:2px}
     <a class="scard" data-st="post-evento" href="#post-evento" style="--c:var(--purple)"><i>3</i><b>Post evento</b><span>Recuperación, días siguientes y fotos</span><em class="now">Ahora</em></a>
     <a class="scard" data-st="puesto-thr" href="#puesto-thr" style="--c:var(--coral)"><i>4</i><b>Puesto THR en el evento</b><span>Ubicación, servicios y contactos</span><em class="now">Ahora</em></a>
   </div>
-  <div class="a2hs">📲 <b>Guardá esta guía en tu celular:</b> en iPhone, tocá Compartir → «Agregar a inicio». En Android, tocá ⋮ → «Agregar a pantalla principal».</div>
+  <div class="pdfdl">
+    <div class="pdft"><b>📄 Llevate la guía en PDF</b><span>Guardala en tu celular y tenela a mano el domingo, aunque no tengas señal.</span></div>
+    <a class="pdfbtn" href="round-tips-thr-gmcr2026.pdf" download="Round tips by THR - GMCR2026.pdf">Descargar PDF</a>
+  </div>
   <p class="motto">Trust your training.<br><span>Trust the process.</span></p>
 </section>
 
